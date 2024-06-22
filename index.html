@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./asets/icon.svg">
+    <title>toDo</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap" rel="stylesheet">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="head">
+        <div class="logo">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <h1> toDo List</h1>
+        </div>
+        <div class="right">
+            <div class="search">
+                <input type="search" placeholder="Search Your List" id="searchToDo">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              
+            </div>
+
+            <div class="menu">
+                <i class="fa-solid fa-bars" id="menu"></i>
+                <!-- <i class="fa-solid fa-xmark" ></i> -->
+            </div>
+           
+        </div>
+    </div>
+    <div class="outer">
+        <div class="contents">
+            <div class="topCont">
+                <input type="text" placeholder="Type Your Todo..." id="inputToDo">
+                <i class="fa-solid fa-plus" id="add"></i>
+            </div>
+
+            <div class="addCont">
+                <div class="added">
+                    <div class="left">
+                        <input type="checkbox" class="check" checked>
+                        <p>Code</p>
+                    </div>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+
+                <div class="added">
+                    <div class="left">
+                        <input type="checkbox" class="check" checked>
+                        <p>Study</p>
+                    </div>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+
+
+                <!-- <div class="added">
+                    <div class="left">
+                        <input type="checkbox" class="check" checked >
+                        <p>Exame Prepration</p>
+                    </div>
+                    <i class="fa-solid fa-trash"></i>
+                </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Search  -->
+    <div class="searchBox">
+        <div class="searchContaint">
+
+            <!-- <div class="searchAdded">
+                <div class="searchLeft">
+                    <input type="checkbox" class="searchCheck" checked>
+                    <p>Study</p>
+                </div>
+                <i class="fa-solid fa-trash"></i>
+            </div> -->
+
+
+
+            <!-- <div class="searchAdded">
+                <div class="searchLeft">
+                    <input type="checkbox" class="searchCheck" checked>
+                    <p>Study</p>
+                </div>
+                <i class="fa-solid fa-trash"></i>
+            </div> -->
+
+
+
+
+            <!-- <div class="searchAdded">
+                <div class="searchLeft">
+                    <input type="checkbox" class="searchCheck" checked>
+                    <p>Study</p>
+                </div>
+                <i class="fa-solid fa-trash"></i>
+            </div> -->
+
+
+
+            <!-- <div class="searchAdded">
+                <div class="searchLeft">
+                    <input type="checkbox" class="searchCheck" checked>
+                    <p>Study</p>
+                </div>
+                <i class="fa-solid fa-trash"></i>
+            </div> -->
+
+
+            <!-- 
+            <div class="searchAdded">
+                <div class="searchLeft">
+                    <input type="checkbox" class="searchCheck" checked>
+                    <p>Study</p>
+                </div>
+                <i class="fa-solid fa-trash"></i>
+            </div>
+ -->
+
+
+            <!-- <div class="searchAdded">
+                <div class="searchLeft">
+                    <input type="checkbox" class="searchCheck" checked>
+                    <p>Study</p>
+                </div>
+                <i class="fa-solid fa-trash"></i>
+            </div> -->
+
+
+            <!-- <div class="searchAdded">
+                <div class="searchLeft">
+                    <input type="checkbox" class="searchCheck" checked>
+                    <p>Study</p>
+                </div>
+                <i class="fa-solid fa-trash"></i>
+            </div> -->
+
+
+
+            <!-- <div class="searchAdded">
+                <div class="searchLeft">
+                    <input type="checkbox" class="searchCheck" checked>
+                    <p>Study</p>
+                </div>
+                <i class="fa-solid fa-trash"></i>
+            </div> -->
+
+
+            <!-- <div class="searchAdded">
+                <div class="searchLeft">
+                    <input type="checkbox" class="searchCheck" checked>
+                    <p>Study1</p>
+                </div>
+                <i class="fa-solid fa-trash"></i>
+            </div> -->
+
+        </div>
+    </div>
+
+
+    <div class="slider hiddeMenu">
+        <ul id="mainMenuUl">
+            <li class="mainMenu" id="profile">
+                <div class="upper">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        Profile</a>
+                        <i class="fa-solid fa-angle-up upArrow" ></i>
+                        <i class="fa-solid fa-angle-down downArro "></i>
+                </div>
+
+                <div class="inner innerHidd" >
+                    <ul>
+                        <li><a href="#">View Profile 1</a></li>
+                        <li><a href="#">View Profile</a></li>
+                        <li><a href="#">Edit Profile</a></li>
+                        <li><a href="#">View Notifications</a></li>
+
+
+
+
+                    </ul>
+                </div>
+
+            </li>
+
+
+            <li class="mainMenu" id="home">
+                <div class="upper innerHidd">
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        Home</a>
+                        <i class="fa-solid fa-angle-up upArrow" ></i>
+                        <i class="fa-solid fa-angle-down downArro "></i>
+                </div>
+
+                <div class="inner innerHidd">
+                    <ul>
+                        <li><a href="#">Overview of tasks</a></li>
+                        <li><a href="#">Quick add task</a></li>
+                      
+
+
+                    </ul>
+                </div>
+            </li>
+
+
+
+
+            <li class="mainMenu" id="task">
+                <div class="upper">
+                    <a href="#">
+                        <i class="fa-solid fa-list-check"></i>
+                        Tasks</a>
+
+                    <i class="fa-solid fa-angle-up upArrow" ></i>
+                    <i class="fa-solid fa-angle-down downArro "></i>
+                </div>
+                <div class="inner innerHidd">
+                    <ul>
+                        <li><a href="#">My Tasks</a></li>
+                        <li><a href="#">Due Today</a></li>
+                        <li><a href="#">Upcoming</a></li>
+                        <li><a href="#">Completed</a></li>
+
+
+
+
+                    </ul>
+                </div>
+            </li>
+
+
+
+
+            <li class="mainMenu" id="project">
+                <div class="upper">
+                    <a href="#">
+                        <i class="fa-solid fa-sheet-plastic"></i>
+                        Projects</a>
+                        <i class="fa-solid fa-angle-up upArrow" ></i>
+                        <i class="fa-solid fa-angle-down downArro "></i>
+                </div>
+                <div class="inner innerHidd">
+                    <ul>
+                        <li><a href="#">Project Overview</a></li>
+                        <li><a href="#">Add New Project</a></li>
+                       
+
+                    </ul>
+                </div>
+
+            </li>
+
+
+
+
+            <li class="mainMenu" id="calender">
+                <div class="upper">
+                    <a href="#">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Calendar</a>
+                        <i class="fa-solid fa-angle-up upArrow" ></i>
+                        <i class="fa-solid fa-angle-down downArro "></i>
+                </div>
+                <div class="inner innerHidd">
+                    <ul>
+                        <li><a href="#">Monthly View</a></li>
+                        <li><a href="#">Weekly View</a></li>
+                        <li><a href="#">Daily View</a></li>
+                       
+
+
+                    </ul>
+                </div>
+            </li>
+
+
+
+
+            <li class="mainMenu" id="category">
+                <div class="upper">
+                    <a href="#">
+                        <i class="fa-solid fa-table-columns"></i>
+                        Categories</a>
+                        <i class="fa-solid fa-angle-up upArrow" ></i>
+                        <i class="fa-solid fa-angle-down downArro "></i>
+                </div>
+                <div class="inner innerHidd">
+                    <ul>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Personal</a></li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Custom Categories</a></li>
+
+
+
+
+                    </ul>
+                </div>
+            </li>
+
+
+
+
+            <li class="mainMenu" id="notes">
+                <div class="upper">
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>
+                        Notes</a>
+                        <i class="fa-solid fa-angle-up upArrow" ></i>
+                        <i class="fa-solid fa-angle-down downArro "></i>
+                </div>
+                <div class="inner innerHidd">
+                    <ul>
+                        <li><a href="#">Add Note</a></li>
+                        <li><a href="#">Search by Tag</a></li>
+                      
+
+
+                    </ul>
+                </div>
+            </li>
+
+
+
+
+            <li class="mainMenu" id="st">
+                <div class="upper">
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        Settings</a>
+                        <i class="fa-solid fa-angle-up upArrow" ></i>
+                        <i class="fa-solid fa-angle-down downArro "></i>
+                </div>
+                <div class="inner innerHidd">
+                    <ul>
+                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="#">Notification Preferences</a></li>
+                        <li><a href="#">Theme/Appearance</a></li>
+                        <li><a href="#">Integrations</a></li>
+
+
+
+
+                    </ul>
+                </div>
+            </li>
+
+
+
+
+
+
+        </ul>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

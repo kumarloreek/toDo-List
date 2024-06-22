@@ -1,0 +1,387 @@
+/* 
+
+#00246B,
+ #CADCFC
+*/
+
+/* 
+header
+
+.playwrite-pl-<uniquifier> {
+  font-family: "Playwrite PL", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+txt
+
+ font-family: "Roboto", sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    background-color: #CADCFC;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+.head{
+    background-color: #00246B;
+    height: 100px;
+    position: sticky;
+    top: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.head .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+}
+.head .logo h1{
+ font-family: "Playwrite PL", cursive;
+ font-weight: 700;
+ color:#fff;
+ margin-left: 1rem;
+}
+.head .logo i{
+    color: #fff;
+    font-size: 30px;
+    
+}
+.head .right{
+    margin-right: 4rem;
+    display: flex;
+    align-items: center;
+}
+.head .right .search{
+    width: 20rem;
+    height: 3rem;
+    border: 1px solid rgb(190, 189, 189);
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10rem;
+}
+.head .right .search input{
+    width: 17rem;
+    height: 100%;
+    border-radius: 10rem 0 0 10rem;
+    border: none;
+    font-size:1rem;
+    padding-left: 1rem;
+}
+.head .right .search i{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color:rgb(190, 189, 189);
+    cursor: pointer;
+}
+.head .right .search i:hover{
+    color: #fff;
+}
+
+
+.head .right .menu i{
+    color: rgb(190, 189, 189);
+    font-size:2rem ;
+    cursor: pointer;
+    
+}
+.head .right .menu i:hover{
+    color: #fff;
+}
+.outer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.outer .contents{
+    width: 40rem;
+    /* border: 1px solid red; */
+    /* margin: auto 30rem ; */
+
+}
+.outer .contents .topCont{
+    height: 3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    /* border: 1px solid black; */
+    background-color: #00246B;
+    box-shadow: 0.5rem 0.5rem 1.5rem #00246B;
+}
+
+.outer .contents .topCont input{
+    height: 100%;
+    width: 94%;
+    border-radius: 0.5rem;
+    border: none;
+    padding-left: 0.5rem;
+    background-color: rgb(190, 189, 189);
+    font-size: 1.5rem;
+}
+.outer .contents .topCont i{
+    font-size: 1.5rem;
+    color: rgb(190, 189, 189) ;
+}
+.outer .contents .topCont i:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.added{
+    width: 100%;
+    height: 5rem;
+    border: 1px solid black;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00246B;
+    box-shadow: 0.1rem 0.1rem 1rem #00246B; 
+  
+}
+
+
+.added .left {
+  display: flex;
+  margin-left: 2rem;
+}
+.added .left p{
+    margin-left: 1rem;
+}
+
+.added .left input{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+    
+}
+.added .left input[type="checkbox"] {
+
+    accent-color: #00246B;
+   cursor: pointer;
+   
+}
+/* .added .left input[type="checkbox"]:checked{
+    color: white;
+} */
+.added .left p{
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+   
+}
+
+.added i{
+  margin-right: 2rem;
+  color: rgb(135, 3, 3);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.added i:hover{
+    color: rgb(199, 7, 7);
+    transform: scale(1.1);
+}
+
+
+
+.searchBox{
+    width: 30rem;
+    height: 30rem;
+    /* border: 1px solid black; */
+    position: absolute;
+    right: 2rem;
+    top: 7rem;
+    overflow-y:scroll ;
+    scroll-behavior: smooth;
+    border-radius: 1rem;
+    visibility:hidden;
+}
+
+.searchBox::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.searchBox .searchContaint{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    background-color: #00246b3f;
+    border-radius: 1rem;
+}
+
+.searchBox .searchContaint .searchAdded{
+    width: 100%;
+    height: 3rem;
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.searchBox .searchContaint .searchAdded:hover{
+box-shadow: 0.3rem 0.3rem 2rem #ffffff95;
+color: red;
+}
+.searchBox .searchContaint .searchAdded .searchLeft{
+    display: flex;
+    margin-left: 1rem;
+}
+
+.searchBox .searchContaint .searchAdded .searchLeft input[type="checkbox"]{
+    width: 1rem;
+    height: 1rem;
+    accent-color: #00246B;
+}
+
+.searchBox .searchContaint .searchAdded .searchLeft p{
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.searchBox .searchContaint .searchAdded i{
+    margin-right: 1rem;
+    color: #fff;
+}
+
+.slider{
+    width: 20rem;
+    /* height: 35rem; */
+    /* border: 1px solid red; */
+    padding: 1rem 2rem;
+    position: absolute;
+    right: 0px;
+    top: 6rem;
+    background-color: #00246b39;
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+    /* box-shadow: 0.3rem 0.3rem 5rem rgba(128, 128, 128, 0.551); */
+}
+.slider ul{
+    width: 100%;
+    height: 100%;
+    
+}
+.slider ul li{
+    list-style: none;
+    /* display: flex;
+    flex-direction: column; */
+}
+.slider ul li .upper{
+    width: 100%;
+    height: 2.5rem;
+    /* border: 1px solid rgba(0, 0, 0, 0.244); */
+    margin-top: 1rem;
+    
+    display: flex;
+    align-items: center;
+    border-radius: 0.2rem;
+    justify-content: space-between;
+    /* box-shadow: 1rem 1rem 2rem black; */
+    transition: all 0.3s linear;
+    
+}
+
+.slider ul li .upper:hover{
+    box-shadow: 0.2rem 0.2rem 3rem #ffffffa6;
+    background-color: #00246B;
+    cursor: pointer;
+}
+
+.slider ul li .upper a i{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.slider ul li .upper a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.slider ul li .upper i{
+    color: #fff;
+    margin-right: 0.5rem;
+}
+
+.mainMenu{
+    display: 100%;
+}
+.hiddeMenu{
+    right: -50rem;
+}
+.innerHidd{
+    height: 0;
+    display: none;
+}
+
+.inner{
+    /* margin-left: 3rem; */
+    /* border:1px solid red; */
+
+    padding: 1rem;
+    background-color: #00246B;
+    padding-bottom: 1rem;
+    border-radius:0.3rem ;
+    
+}
+
+.inner ul{
+    width: 80%;
+}
+.inner ul li{
+    margin-left: 1rem;
+    width: 90%;
+    margin-top: 0.5rem;
+    
+    /* margin: 0.5rem 0rem; */
+}
+.inner ul li a{
+    text-decoration: none;
+    color: gray;
+    transition: all 0.3s linear;
+    
+}
+
+.inner ul li a:hover{
+    color: #fff;
+}
+
+/* #profile{
+    transition: all 2s linear;
+} */
+
+
+
+.upArrow{
+    position: absolute;
+    right: 2rem;
+    visibility: hidden;
+}
