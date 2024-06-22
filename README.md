@@ -48,6 +48,6 @@ Open a Pull Request
 Contact
 Your Name - kumar loreek
 
-Project Link: https://github.com/kumarloreek/todo-list-app
+Project Link: https://github.com/kumarloreek/toDo-List
 
 Feel free to use and modify this project to fit your needs! If you have any questions or feedback, don't hesitate to reach out. Happy coding!
